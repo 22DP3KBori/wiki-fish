@@ -4,65 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makšķerēšanas vietas</title>
+    <link rel="stylesheet" href="/css/style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #222;
-            color: white;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        h1 {
-            margin-top: 20px;
-        }
-        #map {
-            width: 80%;
-            height: 500px;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        }
-        .form-container {
-            margin: 20px auto;
-            width: 50%;
-            background: #333;
-            padding: 15px;
-            border-radius: 10px;
-        }
-        input, textarea, button {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        button {
-            background: #00aaff;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0088cc;
-        }
-    </style>
 </head>
 <body>
+
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">Makšķernieka Forums</div>
+            <a href="forum.php"><i class="fas fa-home"></i> Sākums</a>
+            <a href="topic.php"><i class="fas fa-comments"></i> Temas</a>
+            <a href="fish_map.php"><i class="fas fa-fish"></i> Makšķerēšanas vietas</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="index.php"><i class="fas fa-user"></i> Pieteikties</a>
+            <a href="register.php"><i class="fas fa-user-plus"></i> Reģistrēties</a>
+        </div>
+    </div>
     
     <h1>Makšķerēšanas vietas</h1>
     <p>Pievieno savu iecienītāko makšķerēšanas vietu!</p>
     
     <div id="map"></div>
-    
-    <div class="form-container">
-        <input type="text" id="address" placeholder="Ievadi adresi...">
-        <input type="text" id="fish" placeholder="Kāda zivs šeit ir?">
-        <input type="number" id="depth" placeholder="Dziļums (m)">
-        <label><input type="checkbox" id="boat"> Var makšķerēt ar laivu</label>
-        <textarea id="description" placeholder="Apraksts..."></textarea>
-        <button onclick="geocodeAddress()">Pievienot vietu</button>
-    </div>
 
     <script>
         let map;
@@ -96,11 +61,13 @@
                         position: location,
                     });
                     let infoWindow = new google.maps.InfoWindow({
-                        content: `<strong>Adrese:</strong> ${address}<br>
-                                  <strong>Zivis:</strong> ${fish}<br>
-                                  <strong>Dziļums:</strong> ${depth} m<br>
-                                  <strong>Laiva:</strong> ${boat}<br>
-                                  <strong>Apraksts:</strong> ${description}`
+                    content: `<div style="color: black;">
+                                <strong>Adrese:</strong> ${address}<br>
+                                <strong>Zivis:</strong> ${fish}<br>
+                                <strong>Dziļums:</strong> ${depth} m<br>
+                                <strong>Laiva:</strong> ${boat}<br>
+                                <strong>Apraksts:</strong> ${description}
+                            </div>`
                     });
                     marker.addListener("click", () => {
                         infoWindow.open(map, marker);
@@ -118,4 +85,14 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknPY6ttHWymt7OMAEjD4v_Scpq8UkTGk&callback=initMap"></script>
 
 </body>
+
+<footer class="sticky-footer">
+        <div class="social-icons">
+            <a href="https://twitter.com" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://facebook.com" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+</footer>
+
 </html>

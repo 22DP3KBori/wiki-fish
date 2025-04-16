@@ -25,8 +25,8 @@
     <div class="navbar">
         <div class="nav-left">
             <div class="logo">Makšķernieka Forums</div>
-            <a href="#"><i class="fas fa-home"></i> Sākums</a>
-            <a href="#"><i class="fas fa-comments"></i> Temas</a>
+            <a href="forum.php"><i class="fas fa-home"></i> Sākums</a>
+            <a href="topic.php"><i class="fas fa-comments"></i> Temas</a>
             <a href="fish_map.php"><i class="fas fa-fish"></i> Makšķerēšanas vietas</a>
         </div>
 
@@ -76,10 +76,10 @@
 
     <div id="searchBox" class="search-container">
         <label for="search">Meklēt:</label>
-        <input type="text" id="search" placeholder="Atslēgvārds...">
+        <input type="text" id="search" placeholder="Atslēgvārds..."><br><br>
         <div id="searchBox-checkbox" class="searchBoxas">
             <input type="checkbox" name="c[title_only]" value="1">
-            <label for="title-search">Tikai virsrakstos</label>
+            <label for="title-search">Tikai virsrakstos</label><br><br>
         </div>
         <label for="author">Autors:</label>
         <input type="text" id="author" placeholder="Autors...">
