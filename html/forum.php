@@ -28,6 +28,7 @@
             <a href="forum.php"><i class="fas fa-home"></i> Sākums</a>
             <a href="topic.php"><i class="fas fa-comments"></i> Temas</a>
             <a href="fish_map.php"><i class="fas fa-fish"></i> Makšķerēšanas vietas</a>
+            <a href="record.php"><i class="fas fa-trophy"></i> Rekordu tabula</a>
         </div>
 
         <div class="nav-right">

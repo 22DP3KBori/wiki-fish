@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temas - Makšķernieku Forums</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="/css/style4.css">
@@ -27,6 +28,7 @@
             <a href="forum.php"><i class="fas fa-home"></i> Sākums</a>
             <a href="topic.php"><i class="fas fa-comments"></i> Temas</a>
             <a href="fish_map.php"><i class="fas fa-fish"></i> Makšķerēšanas vietas</a>
+            <a href="record.php"><i class="fas fa-trophy"></i> Rekordu tabula</a>
         </div>
 
         <div class="nav-right">
@@ -41,7 +43,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">Vispārīgi foruma noteikumi</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -54,7 +56,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">Tēmu un apakštēmu veidošanas noteikumi</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -71,7 +73,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">Globālās ziņas</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -84,7 +86,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">Reģionālās ziņas</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -101,7 +103,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">Makšķeres</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -114,7 +116,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">Mānekļi</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -127,7 +129,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">Spoles</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -144,7 +146,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">Iesācēju stūrītis</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -157,7 +159,7 @@
 
         <div class="tema-box">
             <div class="tema-left">
-                <i class="fas fa-fish tema-icon"></i>
+                <i class="fas fa-comment tema-icon"></i>
                 <div class="tema-info">
                     <div class="tema-title"><a href="#">off-topic</a></div>
                     <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
@@ -167,7 +169,57 @@
                 Jaunākais: <strong>Jānis</strong>
             </div>
         </div>
+
+        
     </div>
+
+    <div class="container">
+        <div class="section-title">Tehniskais atbalsts</div>
+
+        <div class="tema-box">
+            <div class="tema-left">
+                <i class="fas fa-bug tema-icon"></i>
+                <div class="tema-info">
+                    <div class="tema-title"><a href="#">Ziņot par vietnes kļūdu</a></div>
+                    <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
+                </div>
+            </div>
+            <div class="tema-right">
+                Jaunākais: <strong>Jānis</strong>
+            </div>
+        </div>
+
+        <div class="tema-box">
+            <div class="tema-left">
+                <i class="fas fa-circle-info tema-icon"></i>
+                <div class="tema-info">
+                    <div class="tema-title"><a href="#">Palīdzība</a></div>
+                    <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
+                </div>
+            </div>
+            <div class="tema-right">
+                Jaunākais: <strong>Jānis</strong>
+            </div>
+        </div>
+
+        <div class="tema-box">
+            <div class="tema-left">
+                <i class="fas fa-lightbulb tema-icon"></i>
+                <div class="tema-info">
+                    <div class="tema-title"><a href="#">Piedāvājumi</a></div>
+                    <div class="tema-meta">Temas: 45 | Ziņas: 230</div>
+                </div>
+            </div>
+            <div class="tema-right">
+                Jaunākais: <strong>Jānis</strong>
+            </div>
+        </div>
+
+
+
+        
+    </div>
+
 
     <div id="searchBox" class="search-container">
         <label for="search">Meklēt:</label>

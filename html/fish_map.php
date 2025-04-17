@@ -16,6 +16,7 @@
             <a href="forum.php"><i class="fas fa-home"></i> Sākums</a>
             <a href="topic.php"><i class="fas fa-comments"></i> Temas</a>
             <a href="fish_map.php"><i class="fas fa-fish"></i> Makšķerēšanas vietas</a>
+            <a href="record.php"><i class="fas fa-trophy"></i> Rekordu tabula</a>
         </div>
 
         <div class="nav-right">
@@ -24,9 +25,10 @@
         </div>
     </div>
     
-    <h1>Makšķerēšanas vietas</h1>
-    <p>Pievieno savu iecienītāko makšķerēšanas vietu!</p>
-    
+    <div class="topic">
+        <h1>Makšķerēšanas vietas</h1>
+    </div>
+
     <div id="map"></div>
 
     <script>
@@ -40,49 +42,14 @@
             });
             geocoder = new google.maps.Geocoder();
         }
-
-        function geocodeAddress() {
-            let address = document.getElementById("address").value;
-            let fish = document.getElementById("fish").value;
-            let depth = document.getElementById("depth").value;
-            let boat = document.getElementById("boat").checked ? "Jā" : "Nē";
-            let description = document.getElementById("description").value;
-
-            if (!address) {
-                alert("Lūdzu, ievadiet adresi!");
-                return;
-            }
-            
-            geocoder.geocode({ address: address }, (results, status) => {
-                if (status === "OK") {
-                    let location = results[0].geometry.location;
-                    let marker = new google.maps.Marker({
-                        map: map,
-                        position: location,
-                    });
-                    let infoWindow = new google.maps.InfoWindow({
-                    content: `<div style="color: black;">
-                                <strong>Adrese:</strong> ${address}<br>
-                                <strong>Zivis:</strong> ${fish}<br>
-                                <strong>Dziļums:</strong> ${depth} m<br>
-                                <strong>Laiva:</strong> ${boat}<br>
-                                <strong>Apraksts:</strong> ${description}
-                            </div>`
-                    });
-                    marker.addListener("click", () => {
-                        infoWindow.open(map, marker);
-                    });
-                    
-                    map.setCenter(location);
-                    map.setZoom(10);
-                } else {
-                    alert("Adrese netika atrasta: " + status);
-                }
-            });
-        }
     </script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknPY6ttHWymt7OMAEjD4v_Scpq8UkTGk&callback=initMap"></script>
+
+    <div class="ad">
+        <i class="fas fa-lightbulb"></i>
+        Vēlies ieteikt makšķerēšanas vietu!? Tad dodies uz sadaļu Temas un atver tēmu Priekšlikumi!
+    </div>
 
 </body>
 
