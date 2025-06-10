@@ -1,0 +1,68 @@
+
+/* Основной пользовательский стиль форума */
+
+.comment-block {
+    display: flex;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.avatar-section {
+    min-width: 80px;
+    text-align: center;
+    color: #fff;
+}
+
+.avatar-section img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.content-section {
+    margin-left: 15px;
+    color: #fff;
+    width: 100%;
+}
+
+.comment-content {
+    background-color: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment-date {
+    display: block;
+    margin-top: 5px;
+    color: #bbb;
+}
+
+.message-form {
+    margin-bottom: 25px;
+    background-color: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.message-form textarea {
+    width: 100%;
+    height: 140px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    resize: vertical;
+}
+
+.message-form button {
+    padding: 10px 25px;
+    background-color: #2e8b57;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

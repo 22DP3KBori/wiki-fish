@@ -1,0 +1,51 @@
+.section-label {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 40px;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.section-label h1 {
+    color: white;
+    margin: 0;
+}
+
+.admin-form {
+      margin: 20px auto;
+      padding: 15px;
+      max-width: 900px;
+      background: #1e1e2f;
+      border-radius: 12px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .admin-form input, .admin-form button {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+    }
+    .admin-form button {
+      background-color: #2e8b57;
+      color: white;
+      cursor: pointer;
+    }
+    .admin-form button:hover {
+      background-color: #256d45;
+    }
+    .record-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .record-table th, .record-table td {
+      padding: 12px;
+      border-bottom: 1px solid #444;
+      text-align: center;
+    }
+    .delete-btn {
+      color: red;
+      cursor: pointer;
+    }
