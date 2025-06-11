@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Izveidojiet tēmu</title>
-    <link rel="stylesheet" href="/css/style7.css">
+    <link rel="stylesheet" href="/css/style8.css">
     <link rel="stylesheet" href="/css/custom_style.css">
 </head>
 <body>

@@ -53,7 +53,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Izveidot apakštēmu</title>
     <link rel="stylesheet" href="/css/style8.css">
-    <link rel="stylesheet" href="https:
     <link rel="stylesheet" href="/css/custom_style.css">
 </head>
 <body>

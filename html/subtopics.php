@@ -36,7 +36,6 @@ $result = $stmt->get_result();
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="/css/style7.css">
-    <link rel="stylesheet" href="/css/custom_style.css">
     <link rel="stylesheet" href="/css/subtopics.css">
 </head>
 <body>

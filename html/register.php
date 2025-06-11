@@ -43,9 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register by Kirills Borisovs</title>
-    <link rel="stylesheet" href="/css/style2.css">
-    <link rel="stylesheet" href="https:
-    <link rel="stylesheet" href="/css/custom_style.css">
+    <link rel="stylesheet" href="/css/login+register(1).css">
+    <link rel="stylesheet" href="/css/login+register(2).css">
 </head>
 <body>
     <div class="container">

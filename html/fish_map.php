@@ -12,9 +12,7 @@ $is_logged_in = isset($user_id);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makšķerēšanas vietas</title>
-    <link rel="stylesheet" href="/css/style5.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/custom_style.css">
     <link rel="stylesheet" href="/css/map.css">
 </head>
 <body>
@@ -66,7 +64,7 @@ $is_logged_in = isset($user_id);
             <option value="<?php echo $p['id']; ?>"><?php echo htmlspecialchars($p['title']); ?></option>
             <?php endwhile; ?>
         </select>
-        <button type="submit" onclick="return confirm('Dzēst эту точку?');">Dzēst punktu</button>
+        <button type="submit" onclick="return confirm('Dzēst punktu?');">Dzēst punktu</button>
     </form>
 </div>
 <?php endif; ?>
